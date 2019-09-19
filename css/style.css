@@ -1,0 +1,208 @@
+@charset "UTF-8";
+html,
+body {
+  margin: 0;
+  width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  width: 90%;
+  min-width: 310px;
+  max-width: 1200px;
+}
+
+button {
+  padding: 10px 20px;
+  color: white;
+  background-color: dodgerblue;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+}
+
+button:hover {
+  -webkit-box-shadow: 0 0 10px 2px #887f7f;
+          box-shadow: 0 0 10px 2px #887f7f;
+}
+
+button.btn-red {
+  background-color: #dc3545;
+}
+
+button.js-edit {
+  margin-right: 10px;
+}
+
+.options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 100px 50px 50px 50px;
+}
+
+select,
+input {
+  height: 20px;
+  min-width: 100px;
+}
+
+.column {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  line-height: 35px;
+}
+
+th {
+  background: #8c8cee;
+}
+
+td {
+  background: rgba(173, 173, 247, 0.8);
+}
+
+table,
+tr,
+th,
+td {
+  margin: 0 auto;
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+td,
+th {
+  padding: 10px 30px;
+}
+
+th {
+  position: relative;
+}
+
+th.hide.downarrow:before, th.hide.uparrow:before {
+  content: "";
+}
+
+th.downarrow:before {
+  content: "▼";
+  left: -3px;
+  top: -1px;
+  font-size: 12px;
+  position: relative;
+  height: 10px;
+  cursor: pointer;
+}
+
+th.uparrow:before {
+  content: "▲";
+  left: -3px;
+  top: -1px;
+  font-size: 12px;
+  position: relative;
+  height: 10px;
+  cursor: pointer;
+}
+
+th:last-of-type:before {
+  content: "";
+}
+
+.popup-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100vw;
+  height: 100vh;
+}
+
+.popup-form .popup-wrapper {
+  width: 450px;
+  padding: 60px 90px;
+  background-color: white;
+  margin: 0 auto;
+}
+
+.popup-form form {
+  width: 100%;
+}
+
+.popup-form form .form-group {
+  line-height: 26px;
+  display: block;
+  padding: 10px 0;
+}
+
+.popup-form form .form-group input {
+  border: 1px solid grey;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  float: right;
+  clear: right;
+  width: 350px;
+}
+
+.popup-form form .form-group.popup-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.popup-form form .form-group.popup-buttons button {
+  margin: 5px;
+}
+
+#warning {
+  color: red;
+}
+
+.popup-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.popup-buttons button {
+  margin: 5px;
+}
+
+#popup-delete {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0;
+  /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+  /* Firefox */
+}
+/*# sourceMappingURL=style.css.map */
